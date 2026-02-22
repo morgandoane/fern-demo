@@ -60,26 +60,26 @@ page-actions:
     cursor: true
 
 css:
-  - docs/assets/main.css
+  - assets/main.css
 
 typography:
   bodyFont:
     name: clarkson
     paths:
-      - path: docs/assets/fonts/clarkson-300.woff2
+      - path: assets/fonts/clarkson-300.woff2
         weight: 300
         style: normal
-      - path: docs/assets/fonts/clarkson-400.woff2
+      - path: assets/fonts/clarkson-400.woff2
         weight: 400
         style: normal
-      - path: docs/assets/fonts/clarkson-500.woff2
+      - path: assets/fonts/clarkson-500.woff2
         weight: 600
         style: normal
 
 logo:
-  dark: docs/assets/logo-dark.svg
-  light: docs/assets/logo-light.svg
+  dark: assets/logo-dark.svg
+  light: assets/logo-light.svg
   height: 20
   href: /
 
-favicon: docs/assets/favicon.svg
+favicon: assets/favicon.svg

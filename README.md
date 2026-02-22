@@ -30,7 +30,7 @@ Welcome! This repository powers your Plant Store documentation site, built with 
 
 - **Edit content** Update pages in `fern/docs/pages/` (e.g. `landingpage.mdx`)
 - **Update API reference** Edit `fern/openapi/api.yml` to add or change endpoints
-- **Customize look and feel** Tweak `fern/docs.yml` for layout and colors, or `fern/docs/assets/main.css` for styling
+- **Customize look and feel** Tweak `fern/docs.yml` for layout and colors, or `fern/assets/main.css` for styling
 
 ## Learn More
 
