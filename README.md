@@ -4,8 +4,9 @@ Welcome! This repository powers your Plant Store documentation site, built with 
 
 ## What's in This Repo
 
-- **Docs content** `fern/docs/` Your landing page, guides, and custom styling (fonts, CSS, logos)
-- **API spec** `fern/openapi/api.yml` The OpenAPI definition that drives your API Reference
+- **Docs content** `fern/docs/` — Your landing page and guides
+- **Assets** `fern/assets/` — Fonts, CSS, logos, favicon (referenced in `fern/docs.yml`)
+- **API spec** `fern/openapi/api.yml` — The OpenAPI definition that drives your API Reference
 - **Configuration** `fern/docs.yml` (site title, layout, colors, navigation) and `fern/fern.config.json` (organization settings)
 
 ## Quick Start
@@ -33,7 +34,7 @@ Welcome! This repository powers your Plant Store documentation site, built with 
 
 - **Edit content** Update pages in `fern/docs/pages/` (e.g. `landingpage.mdx`)
 - **Update API reference** Edit `fern/openapi/api.yml` to add or change endpoints
-- **Customize look and feel** Tweak `fern/docs.yml` for layout and colors, or `fern/assets/main.css` for styling
+- **Customize look and feel** Tweak `fern/docs.yml` for layout and colors; add or edit assets (CSS, logos, fonts) in `fern/assets/`
 
 ## Learn More
 
