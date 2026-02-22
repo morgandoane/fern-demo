@@ -1,11 +1,9 @@
 openapi: 3.1.0
 servers:
-  - url: https://api.plantstore.demo
-    x-fern-server-name: Demo API Server
-    description: Demo server
+  - url: https://api.plantstore.prod
+    x-fern-server-name: Production Environment
   - url: https://api.plantstore.sandbox
-    x-fern-server-name: Sandbox API Server
-    description: Sandbox server
+    x-fern-server-name: Sandbox Environment
 info:
   description: |
     This is a sample Plant Store Server based on the OpenAPI 3.1 specification. It provides a comprehensive set of endpoints for managing plants, orders, and user authentication.
