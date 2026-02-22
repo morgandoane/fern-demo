@@ -11,14 +11,17 @@ Welcome! This repository powers your Plant Store documentation site, built with 
 ## Quick Start
 
 1. **Install the Fern CLI**
+
    ```bash
    npm install -g fern-api
    ```
 
 2. **Preview locally**
+
    ```bash
    fern docs dev
    ```
+
    Your docs will be available at `http://localhost:3000`.
 
 3. **Publish changes**
