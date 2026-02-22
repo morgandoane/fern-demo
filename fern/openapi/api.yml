@@ -2,7 +2,7 @@ openapi: 3.1.0
 servers:
   - url: https://api.plantstore.prod
     x-fern-server-name: Production Environment
-  - url: https://api.plantstore.sandbox
+  - url: https://api.plantstore.dev
     x-fern-server-name: Sandbox Environment
 info:
   description: |
