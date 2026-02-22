@@ -39,7 +39,7 @@ div[role="tablist"] a::after{
 
 .fern-header-tabs div[role="tablist"] a{
     font-size: 12px !important;
-    border-radius: 99999px !important;
+    border-radius: 0px !important;
     margin-right: 0.5rem !important;
     height: 32px;
     transition: all 0.3s ease;
@@ -96,16 +96,12 @@ a.fern-sidebar-link[href="/"] {
 
 /* Sidebar navigation button styling */
 .fern-sidebar-link {
-    background-color: var(--grayscale-a3) !important;
-    border-radius: 9999px !important;
+    border-radius: calc(.25rem * 2) !important;
     margin-bottom: 0.25rem;
 }
-.fern-sidebar-link:hover {
-    background-color: var(--grayscale-a4) !important;
-}
 .fern-sidebar-link[data-state="active"] {
-    background-color: var(--accent, #000000) !important;
-    color: var(--accent-contrast, #ffffff) !important;
+    background-color: var(--grayscale-a3) !important;
+    color: var(--accent-all) !important;
 }
 .fern-sidebar-link[data-state="active"] .fern-sidebar-link-title {
     color: inherit !important;

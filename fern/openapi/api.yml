@@ -5,17 +5,17 @@ servers:
 info:
   description: |
     This is a sample Plant Store Server based on the OpenAPI 3.1 specification. It provides a comprehensive set of endpoints for managing plants, orders, and user authentication.
-    
+
     ### Key Features
     - **Rich API Documentation**: Includes detailed examples and schema definitions.
     - **Search Functionality**: Search for plants by tags or status.
     - **User-Friendly Endpoints**: Login, logout, and retrieve user information.
     - **Error Handling**: Clear and consistent error responses.
-    
+
     ### Developer Notes
     - Use `api_key` for store endpoints requiring authorization.
     - OAuth2 flow is available for plant-specific operations.
-    
+
   version: 1.0.18
   title: Swagger Plant Store - OpenAPI 3.1
   termsOfService: "http://buildwithfern.com/tos/"
@@ -319,6 +319,17 @@ webhooks:
                   format: date-time
                 data:
                   $ref: "#/components/schemas/PlantResponse"
+            example:
+              event: plant.created
+              timestamp: "2024-06-01T14:22:31Z"
+              data:
+                id: 102
+                name: Golden Pothos
+                status: available
+                tags:
+                  - green
+                  - hanging
+                  - easy-care
       responses:
         "200":
           description: Webhook processed successfully
@@ -385,7 +396,13 @@ components:
           type: array
           items:
             type: string
-            enum: [plant.created, plant.updated, plant.status_changed, plant.deleted]
+            enum:
+              [
+                plant.created,
+                plant.updated,
+                plant.status_changed,
+                plant.deleted,
+              ]
           description: List of events to subscribe to
         secret:
           type: string
@@ -409,4 +426,3 @@ components:
           type: string
           enum: [active, inactive]
           description: Current status of the webhook
-  
