@@ -1,5 +1,5 @@
 paths:
-  /user/username:
+  /user/{username}:
     get:
       x-fern-examples:
         - path-parameters:

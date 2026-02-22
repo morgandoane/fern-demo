@@ -1,35 +1,37 @@
-# Fern Work Sample Demo
+# Plant Store Documentation
 
-You'll be modifying the contents of this repository to create a demo Fern website for a mock Plant Store company. In this scenario, we will be showing the Plant Store company this website, along with the repository used to generate the website, so be sure to keep the repository clean and ready to show a potential client. Prospective customers evaluate docs on ease of use, styling and custom features (more on this later).
+Welcome! This repository powers your Plant Store documentation site, built with [Fern](https://buildwithfern.com/). You're in the right place to understand how it works and make changes.
 
-Follow the steps in this `README.md` to get started.
+## What's in This Repo
 
-## 1. Installation
+- **Docs content** `fern/docs/` Your landing page, guides, and custom styling (fonts, CSS, logos)
+- **API spec** `fern/openapi/api.yml` The OpenAPI definition that drives your API Reference
+- **Configuration** `fern/docs.yml` (site title, layout, colors, navigation) and `fern/fern.config.json` (organization settings)
 
-To start, install the Fern CLI: 
+## Quick Start
 
-```
-npm install -g fern-api
-```
+1. **Install the Fern CLI**
+   ```bash
+   npm install -g fern-api
+   ```
 
-This will allow you to use Fern in the terminal to check and publish your demo site. 
+2. **Preview locally**
+   ```bash
+   fern docs dev
+   ```
+   Your docs will be available at `http://localhost:3000`.
 
-## 2. Project Naming
+3. **Publish changes**
+   ```bash
+   fern docs publish
+   ```
 
-Fern requires you to specify a unique organization name and website domain to generate a project. 
+## Making Changes
 
-First, update the organization name defined in the [`fern.config.json`](/fern/fern.config.json) file to something other than `sample-demo-site`. As an example, you could use `firstName-lastName-demo`
+- **Edit content** Update pages in `fern/docs/pages/` (e.g. `landingpage.mdx`)
+- **Update API reference** Edit `fern/openapi/api.yml` to add or change endpoints
+- **Customize look and feel** Tweak `fern/docs.yml` for layout and colors, or `fern/docs/assets/main.css` for styling
 
-Next, update _only the first subdomain_ of the `url` field defined in the [`docs.yml`](/fern/docs.yml) file to something other than `sample-demo-site`. The resulting URL should look something like `firstName-lastName-demo.docs.buildwithfern.com` and publish the docs site.
+## Learn More
 
-## 3. Complete the Work Sample
-
-Complete the steps outlined in the [Overview page](/fern/pages/overview.mdx).
-
-## 4. Push to a GitHub Repository
-
-Publish the contents of this folder to a GitHub repository. Be sure to remove any unnecessary files. 
-
-## 5. Replace this README.md
-
-Finally, since we'll be showing the fake Plant Store company this repository during the demo, replace the contents of this `README.md` with some helpful instructions for getting started and using the project. 
+For deeper guidance on Fern Docs, check out the [Fern Docs overview](https://buildwithfern.com/learn/docs/getting-started/overview).

@@ -3,7 +3,7 @@
 instances:
   - url: morgan-doane-demo.docs.buildwithfern.com
 
-title: Sample | Documentation
+title: Plant Store Documentation
 
 layout:
   searchbar-placement: header
@@ -36,8 +36,6 @@ tabs:
     skip-slug: true
   api-reference:
     display-name: API Reference
-  instructions:
-    display-name: Instructions
 
 navigation:
   - tab: home
@@ -47,10 +45,6 @@ navigation:
   - tab: api-reference
     layout:
       - api: API Reference
-  - tab: instructions
-    layout:
-      - page: Instructions
-        path: docs/pages/instructions.mdx
 
 colors:
   accentPrimary:
