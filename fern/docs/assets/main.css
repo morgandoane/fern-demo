@@ -142,7 +142,8 @@ a.fern-sidebar-link[href="/"] {
     font-size: 1.5rem;
     line-height: 1.6;
     color: white;
-    margin: 0 0 0.5rem 0;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-button {
@@ -156,12 +157,14 @@ a.fern-sidebar-link[href="/"] {
     opacity: 1 !important;
     border: none;
     font-weight: 600;
-    padding: 8px 24px;
+    padding: 12px 32px;
     font-size: 1rem;
     border-radius: 0px;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .get-started-btn:hover {
     background: #e0e0e0 !important;
@@ -193,11 +196,11 @@ a.fern-sidebar-link[href="/"] {
     line-height: 1.2;
 }
 .section-content p {
-    font-size: 16px;
-    font-family: clarkson, ui-sans-serif, system-ui, sans-serif;
-    color: #2A2A2A;
+    font-size: var(--text-base);
+    font-family: var(--font-body);
+    color: var(--color-white);
     line-height: 1.6;
-    margin: 0 0 24px 0;
+    margin: 0 0 1.5rem 0;
 }
 
 /* Dark mode: ensure readable text on dark backgrounds */
@@ -333,9 +336,10 @@ a.fern-sidebar-link[href="/"] {
   }
 
   .sqsp-card-content p {
-    margin: 0;
-    font-size: var(--text-base);
-    line-height: var(--text-base--line-height);
+    margin: 0 0 1.5rem 0;
+    font-size: 15px;
+    font-weight: var(--font-weight-light);
+    line-height: 1.6;
     color: var(--color-white) !important;
   }
 
